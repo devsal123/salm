@@ -1,0 +1,20 @@
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  min-height: 100% !important;
+  min-width: 100% !important;
+  background-color: #f9f9f9;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.home-background {
+  height: 100vh;
+}
+
+.lefted {
+  float: left;
+}
+
+.righted {
+  float: right;
+}

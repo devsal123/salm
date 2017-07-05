@@ -1,0 +1,30 @@
+#nav-area {
+  background-color: #fff; 
+  padding-top: 15px;
+  padding-bottom: 6px;
+  -webkit-box-shadow: 0 10px 30px rgba(50,50,93,.03), 0 0px 10px rgba(0,0,0,.06);
+  box-shadow: 0 10px 30px rgba(50,50,93,.03), 0 0px 10px rgba(0,0,0,.06);
+}
+#nav-content {
+  float: right;
+}
+.nav-item {
+  margin-right: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+.nav-item:hover {
+  color: #EA346D;
+  cursor: pointer;
+  cursor: hand;
+}
+#logo {
+  font-family: 'Shadows Into Light Two', cursive;
+  color: #EA346D;
+  text-decoration: none;
+  padding-left: 20px;
+  font-size: 20px;
+}
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px), only screen and (max-device-width: 640px) {
+}

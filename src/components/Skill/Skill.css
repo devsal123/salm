@@ -1,0 +1,22 @@
+#skill-area {
+  background-color: #fff;
+  margin-right: 3.3%;
+}
+.skill-title {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.skill-info {
+  padding: 10px;
+}
+
+.description {
+  padding: 12px;
+  line-height: 20px;
+}
+
+.image {
+  width: 100%;
+}

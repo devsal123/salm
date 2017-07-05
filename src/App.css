@@ -1,0 +1,84 @@
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+/* By Sal */
+
+.home-background {
+  height: 100vh;
+}
+
+.centered {
+  margin: 0 auto;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.pinky-back {
+  background-color: #EA346D;
+}
+.pinky-text {
+  color: #EA346D;
+}
+.row {
+  width: 100%;
+  display: block;
+}
+.half {
+  width: 50% !important;
+}
+.quarter {
+  width: 25% !important;
+}
+.thirty{
+  width: 30%;
+}
+.forty-five {
+  width: 45% !important;
+}
+
+.page-item {
+    text-align: left;
+    min-height: 350px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 15px 35px rgba(50,50,93,.03), 0 5px 15px rgba(0,0,0,.06);
+    box-shadow: 0 15px 35px rgba(50,50,93,.03), 0 5px 15px rgba(0,0,0,.06);
+    cursor: pointer;
+}
+
+.page-item:hover {
+  -webkit-box-shadow: 0 25px 45px rgba(50,50,93,.03), 0 15px 25px rgba(0,0,0,.06);
+  box-shadow: 0 25px 45px rgba(50,50,93,.03), 0 15px 25px rgba(0,0,0,.06);
+  cursor: pointer;
+  -webkit-transition: all .15s ease;
+  -o-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.fade {
+    opacity: 1;
+    -webkit-transition: opacity .2s ease-in-out;
+    -o-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out;
+}
+
+.page-item_container {
+    position: relative;
+    text-align: left;
+}
+
+
+@media only screen and (min-width: 640px){
+  .page-item__container {
+      width: calc(50% - 20px);
+      height: 145px;
+  }
+}
+/* end By Sal */
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
