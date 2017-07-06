@@ -77,6 +77,19 @@
       height: 145px;
   }
 }
+
+@media only screen and (max-width: 480px){
+  .lefted {
+    float: none;
+  }
+  .righted {
+    float: none;
+  }
+  .quarter {
+    width: 90% !important;
+  }
+}
+
 /* end By Sal */
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }

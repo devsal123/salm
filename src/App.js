@@ -40,7 +40,7 @@ class App extends Component {
         {
           title: 'Mobile Applications',
           'image': 'img/16.png',
-          'description': `Build and share experiences so personal people can carry with them wherever they go.`
+          'description': `Build and share experiences so personal people can carry everywhere they go.`
         },
         {
           title: 'Web REST APIs',

@@ -1,6 +1,5 @@
 #cooltext-area {
   color: #000;
-  margin-right: 3%;
   text-align: center;
   font-size: 30px;
 }
@@ -8,7 +7,6 @@
 #cool-writing h1 {
   font-size: 90px;
   padding: 30px;
-  padding-top: 30px;
   font-weight: lighter;
 }
 
@@ -25,4 +23,28 @@
   margin-top: -70px;
   margin-bottom: 60px;
   font-weight: 200;
+}
+
+@media only screen and (max-width: 1300px){
+  #cool-writing h1 {
+    font-size: 65px;
+    padding: 30px;
+    padding-top: 15px;
+  }
+  #cool-writing h3 {
+    font-size: 30px;
+    margin-top: -50px;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  #cool-writing h1 {
+    font-size: 45px;
+    padding-top: 10px;
+  }
+  #cool-writing h3 {
+    font-size: 20px;
+    margin-bottom: 35px;
+  }
 }
