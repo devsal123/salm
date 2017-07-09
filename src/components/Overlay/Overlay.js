@@ -2,7 +2,6 @@ import React from 'react'
 import './Overlay.css'
 
 const NavRegion = (props) => {
-
   return (
     <div id="overlay">
       <div id="close"

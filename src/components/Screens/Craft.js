@@ -10,52 +10,58 @@ const craft =
         </div>
         <div className="centered-text">
           <div className="lefted quarter tool-icon-area">
-            <a href='https://vuejs.org/' target='_blank'>
-              <img className="tool-icon" src='/img/vue.png' /><br />
+            <a href='https://vuejs.org/' rel="noopener noreferrer" target='_blank'>
+              <img className="tool-icon" src='/img/vue.png' alt="Vuejs" /><br />
               <b><i>Vuejs</i></b>
             </a>
           </div>
           <div className="lefted quarter tool-icon-area">
-            <a href='https://facebook.github.io/react/' target='_blank'>
-              <img className="tool-icon" src='/img/node.png' /><br />
+            <a href='https://nodejs.org/en/' rel="noopener noreferrer" target='_blank'>
+              <img className="tool-icon" src='/img/node.png' alt="Nodejs" /><br />
               <b><i>Nodejs</i></b>
             </a>
           </div>
           <div className="lefted quarter tool-icon-area">
-            <a href='https://facebook.github.io/react/' target='_blank'>
-              <img className="tool-icon" src='/img/react-icon.png' /><br />
+            <a href='https://facebook.github.io/react/' rel="noopener noreferrer" target='_blank'>
+              <img className="tool-icon" src='/img/react-icon.png' alt="Reactjs" /><br />
               <b><i>Reactjs</i></b>
             </a>
           </div>
           <div className="lefted quarter tool-icon-area">
-            <a href='https://facebook.github.io/react/' target='_blank'>
-              <img className="tool-icon" src='/img/loopback.png' /><br />
+            <a href='http://loopback.io/' rel="noopener noreferrer" target='_blank'>
+              <img className="tool-icon" src='/img/loopback.png' alt="Loopback" /><br />
               <b><i>Loopback</i></b>
             </a>
           </div>
           <div className="lefted quarter tool-icon-area">
-            <a href='https://feathersjs.com/' target='_blank'>
-              <img className="tool-icon" src='/img/feathersjs.svg' /><br />
+            <a href='https://feathersjs.com/' rel="noopener noreferrer" target='_blank'>
+              <img className="tool-icon" src='/img/feathersjs.svg' alt="Feathersjs" /><br />
               <b><i>Feathersjs</i></b>
             </a>
           </div>
           <div className="lefted quarter tool-icon-area">
-            <a href='https://facebook.github.io/react-native/' target='_blank'>
-              <img className="tool-icon" src='/img/reactnative.png' /><br />
+            <a href='https://facebook.github.io/react-native/' rel="noopener noreferrer" target='_blank'>
+              <img className="tool-icon" src='/img/reactnative.png' alt="React Native" /><br />
               <b><i>React Native</i></b>
             </a>
           </div>
           <div className="lefted quarter tool-icon-area">
-            <a href='https://electron.atom.io/' target='_blank'>
-              <img className="tool-icon" src='/img/electron.png' /><br />
+            <a href='https://electron.atom.io/' rel="noopener noreferrer" target='_blank'>
+              <img className="tool-icon" src='/img/electron.png' alt="Electron" /><br />
               <b><i>Electron</i></b>
+            </a>
+          </div>
+          <div className="lefted quarter tool-icon-area">
+            <a href='https://socket.io/' rel="noopener noreferrer" target='_blank'>
+              <img className="tool-icon" src='/img/socketio.png' alt="Socket io" /><br />
+              <b><i>socket.io</i></b>
             </a>
           </div>
         </div>
       </div>
       <div id="craft-area-right">
         <div className="title-area">
-          Earlier Works
+          How I work
         </div>
       </div>
     </div>

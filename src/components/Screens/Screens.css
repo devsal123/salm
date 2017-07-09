@@ -22,11 +22,63 @@
   float: right;
 }
 
+#about-area {
+  margin-top: 100px;
+}
+
+#my-title {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
+}
+
+#my-info {
+  float: right;
+}
+
 .title-area {
   padding-left: 50px;
   text-align: left;
   font-size: 30px;
-  margin-bottom: 50px;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 20px;
+}
+
+#stories-row {
+  width: 75%;
+  margin: 0 auto;
+  min-height: 450px;
+  border-radius: 5px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 20px 35px rgba(50,50,93,.03), 0 5px 15px rgba(0,0,0,.06);
+  box-shadow: 0 20px 35px rgba(50,50,93,.03), 0 5px 15px rgba(0,0,0,.06);
+}
+
+#about-pic {
+  width: 30%;
+  float: left;
+}
+#about-pic img{
+  margin: 0 auto;
+  margin-top: 100px;
+  width:  150px;
+  padding-bottom: 20px;
+}
+
+#simple-info {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.social-icon{
+  width: 25px !important;
+  margin-right: 10px !important;
+  margin-top: 10px !important;
+}
+
+#sending {
+  color: #3bb881;
+  font-size: 60px;
+  margin-top: 200px;
 }
 
 .tool-icon-area {
@@ -36,8 +88,8 @@
   margin-bottom: 20px;
   border-radius: 5px;
   min-height: 85px;
-  -webkit-box-shadow: 0 15px 35px rgba(50,50,93,.03), 0 5px 15px rgba(0,0,0,.06);
-  box-shadow: 0 15px 35px rgba(50,50,93,.03), 0 5px 15px rgba(0,0,0,.06);
+  -webkit-box-shadow: 0 15px 20px rgba(50,50,93,.03), 0 2px 7px rgba(0,0,0,.06);
+  box-shadow: 0 5px 20px rgba(50,50,93,.03), 0 2px 7px rgba(0,0,0,.06);
   padding: 20px;
 }
 
@@ -77,6 +129,7 @@
 }
 
 #form-area input, #form-area textarea {
+  background-color: #f9f9f9;
   border-left: none;
   border-right: none;
   border-top: none;
@@ -86,8 +139,19 @@
   border-width: 0.5px;
 }
 
+input.false, textarea.false{
+  border-color: red !important;
+}
+
+input.true, textarea.true{
+  border-color: #3bb881 !important;
+}
+
 #form-area input:hover, #form-area textarea:hover {
   border-color: #EA346D;
+  -webkit-transition: all .30s ease;
+  -o-transition: all .30s ease;
+  transition: all .30s ease;
 }
 
 #form-area input:active, #form-area textarea:active {
@@ -120,6 +184,9 @@
   color: #EA346D;
   cursor: pointer;
   cursor: hand;
+  -webkit-transition: all .15s ease;
+  -o-transition: all .15s ease;
+  transition: all .15s ease;
 }
 
 #hello-text {

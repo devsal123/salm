@@ -8,7 +8,7 @@ import Skills from './components/Skills/Skills'
 import Overlay from './components/Overlay/Overlay'
 import about from './components/Screens/About'
 import craft from './components/Screens/Craft'
-import contact from './components/Screens/Contact'
+import Contact from './components/Screens/Contact'
 
 class App extends Component {
 
@@ -20,6 +20,9 @@ class App extends Component {
         { url: '/do', name: 'Craft' },
         { url: '/', name: 'About me' }
       ],
+      contact_name: '',
+      contact_email: '',
+      contact_message: '',
       profileStatus: false,
       cooltextStatus: true,
       contactStatus: false,
@@ -50,6 +53,8 @@ class App extends Component {
       ]
     }
     this.on = this.on.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
+    this.handleContactChange = this.handleContactChange.bind(this)
   }
 
   /* Put on the overlay */
@@ -62,10 +67,10 @@ class App extends Component {
         this.setState({ overlay_item: craft })
         break
       case 'Contact':
-        this.setState({ overlay_item: contact})
+        this.setState({ overlay_item: <Contact onSubmit={this.handleSubmit}/>})
         break
       default:
-        this.setState({ overlay_item: about })
+        this.setState({ overlay_item: 'about' })
     }
     const overlay = document.getElementById("overlay")
     overlay.style.display = "block";
@@ -75,6 +80,27 @@ class App extends Component {
   off() {
       const overlay = document.getElementById("overlay")
       overlay.style.display = "none";
+  }
+
+  handleSubmit(email, name, message) {
+    var clientId = '646234832361-2eei6kksctoekq7hhltpgoubvfh92ebt.apps.googleusercontent.com'
+    var apiKey = 'STZCzRoIw5oF1fjP2EuX2KPg'
+    var scopes = 'https://www.googleapis.com/auth/gmail.send'
+  }
+
+  handleContactChange(newContactDetails, type) {
+    if(type === 'contact_name') {
+      this.setState({ contact_name: this.state.contact_name + newContactDetails})
+    }
+    else if(type === 'contact_email') {
+      this.setState({ contact_email: newContactDetails})
+    }
+    else if(type === 'contact_message') {
+      this.setState({contact_message: newContactDetails})
+    }
+    console.log("email : " + this.state.contact_email)
+    console.log("name : " + this.state.contact_name)
+    console.log("message : " + this.state.contact_message)
   }
 
   render() {

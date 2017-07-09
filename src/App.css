@@ -44,8 +44,8 @@
     text-align: left;
     min-height: 350px;
     border-radius: 5px;
-    -webkit-box-shadow: 0 15px 35px rgba(50,50,93,.03), 0 5px 15px rgba(0,0,0,.06);
-    box-shadow: 0 15px 35px rgba(50,50,93,.03), 0 5px 15px rgba(0,0,0,.06);
+    -webkit-box-shadow: 0 15px 20px rgba(50,50,93,.03), 0 2px 7px rgba(0,0,0,.06);
+    box-shadow: 0 5px 20px rgba(50,50,93,.03), 0 2px 7px rgba(0,0,0,.06);
     cursor: pointer;
 }
 

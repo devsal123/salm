@@ -14,7 +14,8 @@
 
 .description {
   padding: 12px;
-  line-height: 20px;
+  line-height: 22px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .image {
