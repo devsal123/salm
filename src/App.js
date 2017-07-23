@@ -3,12 +3,11 @@ import './App.css'
 import NavRegion from './components/NavRegion/NavRegion'
 import CoolText from './components/CoolText/CoolText'
 import Profile from './components/Profile/Profile'
-import MessageBox from './components/MessageBox/MessageBox'
 import Skills from './components/Skills/Skills'
-import Overlay from './components/Overlay/Overlay'
-import about from './components/Screens/About'
-import craft from './components/Screens/Craft'
-import Contact from './components/Screens/Contact'
+import About from './components/Screens/About'
+import Craft from './components/Screens/Craft'
+import Footer from './components/Footer/Footer'
+import 'animate.css/animate.css'
 
 class App extends Component {
 
@@ -16,22 +15,19 @@ class App extends Component {
     super(props)
     this.state = { 
       links: [
-        { url: '#contact', name: 'Contact' },
         { url: '/do', name: 'Craft' },
         { url: '/', name: 'About me' }
       ],
-      contact_name: '',
-      contact_email: '',
-      contact_message: '',
       profileStatus: false,
-      cooltextStatus: true,
-      contactStatus: false,
-      craftStatus: false,
       messageStatus: false,
+      homeStatus: true,
+      aboutStatus: false,
+      craftStatus: false,
       cooltext: 'Build experiences across platforms',
       profile_name: 'Salifu Mutaru',
       profile_email: 'developer.salifu@gmail.com',
-      profile_phone: '+233 543 344 100',
+      profile_phone: '(+233) 0543 - 344 - 100',
+      copyright: '© 2017 Salm',
       minfo: 'This is message box',
       'overlay_item': null,
       skills: [
@@ -43,7 +39,7 @@ class App extends Component {
         {
           title: 'Mobile Applications',
           'image': 'img/16.png',
-          'description': `Build and share experiences so personal people can carry everywhere they go.`
+          'description': `Build and share experiences so personal you can carry everywhere you go.`
         },
         {
           title: 'Web REST APIs',
@@ -60,32 +56,22 @@ class App extends Component {
   /* Put on the overlay */
   on(type) {
     switch(type){
+      case 'Home':
+        this.setState({ homeStatus: true, craftStatus:false, aboutStatus:false})
+        break
       case 'About me':
-        this.setState({ overlay_item: about })
+        this.setState({ aboutStatus: true, homeStatus: false, craftStatus: false })
         break
       case 'Craft':
-        this.setState({ overlay_item: craft })
-        break
-      case 'Contact':
-        this.setState({ overlay_item: <Contact onSubmit={this.handleSubmit}/>})
+        this.setState({ craftStatus: true, homeStatus: false, aboutStatus: false })
         break
       default:
-        this.setState({ overlay_item: 'about' })
+        this.setState({ homeStatus: true, aboutStatus: false, craftStatus: false })
     }
-    const overlay = document.getElementById("overlay")
-    overlay.style.display = "block";
-  }
-
-  /* Put off the overlay */
-  off() {
-      const overlay = document.getElementById("overlay")
-      overlay.style.display = "none";
   }
 
   handleSubmit(email, name, message) {
-    var clientId = '646234832361-2eei6kksctoekq7hhltpgoubvfh92ebt.apps.googleusercontent.com'
-    var apiKey = 'STZCzRoIw5oF1fjP2EuX2KPg'
-    var scopes = 'https://www.googleapis.com/auth/gmail.send'
+    console.log(email + name + message)
   }
 
   handleContactChange(newContactDetails, type) {
@@ -106,39 +92,50 @@ class App extends Component {
   render() {
     return (
       <div className="home-background">
-        <Overlay
-          onClick={ this.off }
-          overlay_item = { this.state.overlay_item }
-        />
-        <NavRegion
-          links={ this.state.links } 
-          onClick={ this.on }
-        />
-          <div className="page-items">
+        <div className="row">
+          <NavRegion
+            links={ this.state.links } 
+            onClick={ this.on }
+          />
+        </div>
+        { this.state.homeStatus?
+          <div>
+            <div className="page-items">
+              <div className="row">
+                <CoolText
+                  cooltext={ this.state.cooltext }
+                  cooltextStatus = { this.state.cooltextStatus }
+                />
+              </div>
+            </div>
             <div className="row">
-              <Profile
-                name={ this.state.profile_name }
-                email={ this.state.profile_email }
-                phone={ this.state.profile_phone }
-                profileStatus = { this.state.profileStatus }
-              />
-              <CoolText
-                cooltext={ this.state.cooltext }
-                cooltextStatus = { this.state.cooltextStatus }
+              <Skills
+                skills={ this.state.skills }
               />
             </div>
           </div>
+          : ''
+        }
+        { this.state.aboutStatus?
           <div className="row">
-            <Skills
-              skills={ this.state.skills }
-            />
+            <About />
           </div>
+          : ''
+        }
+        {
+          this.state.craftStatus?
           <div className="row">
-            <MessageBox
-              minfo={ this.state.minfo } 
-              messageStatus = { this.state.messageStatus }
-            />
+            <Craft />
           </div>
+          : ''
+        }
+          <div className="row">
+            <Footer 
+              phone={this.state.profile_phone}
+              email={this.state.profile_email}
+              copyright={this.state.copyright}
+            />
+            </div>
       </div>
     )
   }

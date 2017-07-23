@@ -23,6 +23,10 @@
 .pinky-text {
   color: #EA346D;
 }
+
+.white-text {
+  color: #fff;
+}
 .row {
   width: 100%;
   display: block;

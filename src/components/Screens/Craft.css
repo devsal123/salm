@@ -1,0 +1,219 @@
+.overlay-area {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#craft-area {
+  margin-top: 10px;
+}
+
+#craft-area-left {
+  width: 49%;
+  float: left;
+}
+
+#craft-area-right {
+  width: 49%;
+  background-color: #3bb881;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  float: right;
+}
+
+.craft-content {
+  margin-top: 50px;
+}
+#how-i-work {
+  border-radius: 5px;
+  text-align: left;
+  width: 90%;
+}
+#how-i-work ol {
+  color: #ccc;
+  list-style-type: none;
+}
+
+#how-i-work ol li {
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+#how-i-work li p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  padding-left: 60px;
+  color: #f9f9f9;
+}
+
+#how-i-work span {
+  position: absolute;
+}
+
+.tool-icon-area {
+  position: relative;
+  margin: 0 auto;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  min-height: 85px;
+  -webkit-box-shadow: 0 15px 20px rgba(50,50,93,.03), 0 2px 7px rgba(0,0,0,.06);
+  box-shadow: 0 5px 20px rgba(50,50,93,.03), 0 2px 7px rgba(0,0,0,.06);
+  padding: 20px;
+}
+
+.tool-icon-area:hover {
+  -webkit-box-shadow: 0 25px 45px rgba(50,50,93,.03), 0 15px 25px rgba(0,0,0,.06);
+  box-shadow: 0 25px 45px rgba(50,50,93,.03), 0 15px 25px rgba(0,0,0,.06);
+  cursor: pointer;
+  -webkit-transition: all .15s ease;
+  -o-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.tool-icon-area a {
+  color: #000;
+}
+
+.tool-icon-area:hover a {
+  color: #EA346D;
+}
+
+.tool-icon-area b {
+  position: absolute;
+  bottom: 2px;
+  text-align: center;
+  left: 50%;
+  margin: 0 auto;
+}
+.tool-icon-area b i{
+  position: relative;
+  left: -50%;
+  font-style: normal;
+}
+
+.tool-icon {
+  width: 80px;
+  height: auto;
+}
+
+.cool-btn {
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 50px;
+  padding-left: 50px;
+  background-color: #EA346D;
+  border-color: #EA346D;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+.cool-btn:hover {
+  background-color: #fff;
+  border: solid 1px #EA346D;
+  border-radius: 5px;
+  color: #EA346D;
+  cursor: pointer;
+  cursor: hand;
+  -webkit-transition: all .15s ease;
+  -o-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+#mytools {
+  margin: 0 auto;
+}
+
+#hello-text {
+  font-size: 90px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 1141px){
+
+  #craft-area-left {
+    width: 100%;
+    float: none;
+  }
+
+  #craft-area-right {
+    width: 100%;
+    border: none;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    float: none;
+  }
+
+  .craft-content {
+    margin-top: -10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  #how-i-work ol p {
+    font-weight: 400;
+  }
+  .tool-icon-area {
+    position: relative;
+    margin: 0 auto;
+    margin-left: 0px !important;
+    width: 40% !important;
+    float: left;
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  #mytools {
+    margin-left: 10%;
+  }
+  #craft-area {
+    margin-bottom: 550px;
+  }
+}
+
+@media only screen and (max-width: 780px){
+  #mytools {
+    margin: 0 auto;
+    margin-bottom: 60px !important;
+    margin-left: 17%;
+  }
+  #craft-area {
+    margin-bottom: 500px;
+  }
+  .tool-icon-area {
+    position: relative;
+    margin: 0 auto;
+    margin-left: 2% !important;
+    width: 30% !important;
+    float: left;
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  .craft-content {
+    margin-top: -10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  #craft-area {
+    margin-bottom: 500px;
+  }
+  #mytools {
+    margin-bottom: 60px !important;
+    margin-left: 4%;
+  }
+  .tool-icon-area {
+    position: relative;
+    margin: 0 auto;
+    margin-left: 2% !important;
+    width: 35% !important;
+    float: left;
+    padding: 20px;
+  }
+}
+

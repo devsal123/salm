@@ -21,3 +21,19 @@
 .image {
   width: 100%;
 }
+
+@media only screen and (max-width: 780px){
+  #skill-area.quarter{
+    margin-right: 2%;
+    margin-bottom: 60px;
+    width: 31% !important;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  #skill-area.quarter{
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 95% !important;
+  }
+}

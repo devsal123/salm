@@ -13,7 +13,7 @@ const Skills = (props) => {
       />
   )
   return (
-    <div className="" id="skills-area">
+    <div id="skills-area">
       { myskills }
     </div>
   )
