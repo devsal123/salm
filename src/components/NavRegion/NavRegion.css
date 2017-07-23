@@ -1,9 +1,11 @@
 #nav-area {
+  width: 100%;
   background-color: #fff; 
   padding-top: 15px;
-  padding-bottom: 6px;
+  padding-bottom: 35px;
   -webkit-box-shadow: 0 10px 30px rgba(50,50,93,.03), 0 0px 10px rgba(0,0,0,.06);
   box-shadow: 0 10px 30px rgba(50,50,93,.03), 0 0px 10px rgba(0,0,0,.06);
+  z-index: 5000;
 }
 #nav-content {
   float: right;
@@ -20,11 +22,24 @@
   cursor: hand;
 }
 #logo {
-  font-family: 'Shadows Into Light Two', cursive;
   color: #EA346D;
   text-decoration: none;
-  padding-left: 20px;
+  padding-left: 10px;
   font-size: 20px;
+  float: left;
+  margin-left: 5px;
 }
-@media only screen and (max-width: 480px), only screen and (max-device-width: 480px), only screen and (max-device-width: 640px) {
+#logo:hover {
+  cursor: pointer;
+  cursor: hand;
+}
+@media only screen and (max-width: 480px){
+  #nav-content {
+    margin-right: 20px;
+    width: 70%;
+  }
+  .nav-item {
+    float: right;
+    margin-right: 30px;
+  }
 }

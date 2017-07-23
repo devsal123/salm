@@ -1,64 +1,89 @@
 import React from 'react'
-import './Screens.css'
+import './Craft.css'
 
-const craft = 
-  <div className="overlay-area">
-    <div id="craft-area" className="animated slideInUp" >
-      <div id="craft-area-left">
-        <div className="title-area">
-          My Tools
-        </div>
-        <div className="centered-text">
-          <div className="lefted quarter tool-icon-area">
-            <a href='https://vuejs.org/' target='_blank'>
-              <img className="tool-icon" src='/img/vue.png' /><br />
-              <b><i>Vuejs</i></b>
-            </a>
-          </div>
-          <div className="lefted quarter tool-icon-area">
-            <a href='https://facebook.github.io/react/' target='_blank'>
-              <img className="tool-icon" src='/img/node.png' /><br />
-              <b><i>Nodejs</i></b>
-            </a>
-          </div>
-          <div className="lefted quarter tool-icon-area">
-            <a href='https://facebook.github.io/react/' target='_blank'>
-              <img className="tool-icon" src='/img/react-icon.png' /><br />
-              <b><i>Reactjs</i></b>
-            </a>
-          </div>
-          <div className="lefted quarter tool-icon-area">
-            <a href='https://facebook.github.io/react/' target='_blank'>
-              <img className="tool-icon" src='/img/loopback.png' /><br />
-              <b><i>Loopback</i></b>
-            </a>
-          </div>
-          <div className="lefted quarter tool-icon-area">
-            <a href='https://feathersjs.com/' target='_blank'>
-              <img className="tool-icon" src='/img/feathersjs.svg' /><br />
-              <b><i>Feathersjs</i></b>
-            </a>
-          </div>
-          <div className="lefted quarter tool-icon-area">
-            <a href='https://facebook.github.io/react-native/' target='_blank'>
-              <img className="tool-icon" src='/img/reactnative.png' /><br />
-              <b><i>React Native</i></b>
-            </a>
-          </div>
-          <div className="lefted quarter tool-icon-area">
-            <a href='https://electron.atom.io/' target='_blank'>
-              <img className="tool-icon" src='/img/electron.png' /><br />
-              <b><i>Electron</i></b>
-            </a>
+const Craft = () => {
+  return (
+    <div className="overlay-area">
+      <div id="craft-area" className="animated slideInUp" >
+        <div id="craft-area-right" className="animated slideInRight">
+          <div className="craft-content">
+            <div className="title-area white-text">
+              How I work
+            </div>
+            <div id="how-i-work">
+              <ol>            
+                <li><span>1.</span><p>You call/ email to tell me about your project</p></li>
+                <li><span>2.</span><p>We meet to discuss the project/ problem and brainstorm a solution</p></li>
+                <li><span>3.</span><p>I send you a draft of the agreed upon solution</p></li>
+                <li><span>4.</span><p>I build the solution</p></li>
+                <li><span>5.</span><p>You test solution and give feedback</p></li>
+                <li><span>6.</span><p>I make necessary changes based on feedback</p></li>
+                <li><span>7.</span><p>I deploy the solution</p></li>
+                <li><span>0.</span><p>We iterate the steps above based on the scale of the project</p></li>
+              </ol>
+            </div>
           </div>
         </div>
-      </div>
-      <div id="craft-area-right">
-        <div className="title-area">
-          Earlier Works
+        <div id="craft-area-left">
+          <div className="craft-content">
+            <div className="title-area">
+              My Tools
+            </div>
+            <div className="centered-text" id="mytools">
+              <div className="lefted quarter tool-icon-area">
+                <a href='https://vuejs.org/' rel="noopener noreferrer" target='_blank'>
+                  <img className="tool-icon" src='/img/vue.png' alt="Vuejs" /><br />
+                  <b><i>Vuejs</i></b>
+                </a>
+              </div>
+              <div className="lefted quarter tool-icon-area">
+                <a href='https://facebook.github.io/react/' rel="noopener noreferrer" target='_blank'>
+                  <img className="tool-icon" src='/img/react-icon.png' alt="Reactjs" /><br />
+                  <b><i>Reactjs</i></b>
+                </a>
+              </div>
+              <div className="lefted quarter tool-icon-area">
+                <a href='https://facebook.github.io/react-native/' rel="noopener noreferrer" target='_blank'>
+                  <img className="tool-icon" src='/img/reactnative.png' alt="React Native" /><br />
+                  <b><i>React Native</i></b>
+                </a>
+              </div>
+              <div className="lefted quarter tool-icon-area">
+                <a href='https://electron.atom.io/' rel="noopener noreferrer" target='_blank'>
+                  <img className="tool-icon" src='/img/electron.png' alt="Electron" /><br />
+                  <b><i>Electron</i></b>
+                </a>
+              </div>
+              <div className="lefted quarter tool-icon-area">
+                <a href='https://nodejs.org/en/' rel="noopener noreferrer" target='_blank'>
+                  <img className="tool-icon" src='/img/node.png' alt="Nodejs" /><br />
+                  <b><i>Nodejs</i></b>
+                </a>
+              </div>
+              <div className="lefted quarter tool-icon-area">
+                <a href='http://loopback.io/' rel="noopener noreferrer" target='_blank'>
+                  <img className="tool-icon" src='/img/loopback.png' alt="Loopback" /><br />
+                  <b><i>Loopback</i></b>
+                </a>
+              </div>
+              <div className="lefted quarter tool-icon-area">
+                <a href='https://feathersjs.com/' rel="noopener noreferrer" target='_blank'>
+                  <img className="tool-icon" src='/img/feathersjs.svg' alt="Feathersjs" /><br />
+                  <b><i>Feathersjs</i></b>
+                </a>
+              </div>
+              <div className="lefted quarter tool-icon-area">
+                <a href='https://socket.io/' rel="noopener noreferrer" target='_blank'>
+                  <img className="tool-icon" src='/img/socketio.png' alt="Socket io" /><br />
+                  <b><i>socket.io</i></b>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  )
+}
 
-export default craft
+export default Craft
