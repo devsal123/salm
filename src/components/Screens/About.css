@@ -177,7 +177,7 @@
 
 @media only screen and (max-width: 480px){
   #my-info {
-    width: 95%;
+    width: 90%;
   }
   #info-content {
     padding: 10px;
@@ -185,14 +185,22 @@
     padding-right: 10px;
     margin: 0 auto;
     text-align: justify;
+    font-weight: 300;
   }
   #stories-row {
     margin: 0 auto;
-    width: 100%;
+    width: 95%;
     border: none;
     padding-bottom: 40px;
   }
-    #about-area {
-        margin-bottom: 80px;
-    }
+  #about-area {
+      margin-bottom: 80px;
+  }
+  #about-phone {
+    float: left;
+  }
+  #my-button {
+    float: right;
+    margin-right: 10px;
+  }
 }

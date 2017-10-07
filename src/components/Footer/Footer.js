@@ -17,7 +17,7 @@ const Footer = (props) => {
         </div>
       </div>
       <div id="footer-mobile">
-        developer.salifu@gmail.com | +233-543-344-100
+        {props.email} | {props.phone}
       </div>
     </div>
   )

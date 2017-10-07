@@ -13,6 +13,9 @@
   margin: 0 auto;
 }
 
+.full-width {
+  width: 100%;
+}
 .centered-text {
   text-align: center;
 }
@@ -22,6 +25,13 @@
 }
 .pinky-text {
   color: #EA346D;
+}
+
+.greeny-back {
+  background-color: #51D48A;
+}
+.greeny-text {
+  color: #51D48A;
 }
 
 .white-text {

@@ -14,7 +14,7 @@ const NavRegion = (props) => {
   )
   return (
     <div id="nav-area">
-      <div id="logo" onClick={ (e) => props.onClick('Home') }>Salm</div>
+      <div id="logo" onClick={ (e) => props.onClick('Home') }>salm<b id="creates">creates</b></div>
       <div id="nav-content">
         { linkItems }
       </div>

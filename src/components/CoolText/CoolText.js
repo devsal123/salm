@@ -7,8 +7,8 @@ const CoolText = (props) => {
     <div className="row" id="cooltext-area">
       <div>
         <div id="cool-writing">
-          <h1>Be <b className="pinky-text bolded">Bold!</b></h1>
-          <h3>Share experiences across platforms </h3>
+          <h1>I'm <b className="greeny-text">Salm!</b></h1>
+          <h3>I love to build cool tech solutions like ... </h3>
         </div>
       </div>
     </div>
